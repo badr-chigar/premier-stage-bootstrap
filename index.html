@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechnoServices — Site vitrine responsive</title>
+  <meta name="description" content="Site vitrine responsive réalisé en HTML5, CSS3 et Bootstrap 5 lors de mon premier stage." />
+
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="80">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#accueil">
+        <i class="bi bi-hexagon-fill text-warning"></i> TechnoServices
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navItems"
+              aria-controls="navItems" aria-expanded="false" aria-label="Menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navItems">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#accueil">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#apropos">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#realisations">Réalisations</a></li>
+          <li class="nav-item"><a class="nav-link" href="pages/contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero d-flex align-items-center" id="accueil">
+    <div class="container text-center text-white">
+      <span class="badge rounded-pill bg-warning text-dark mb-3 px-3 py-2">Solutions numériques</span>
+      <h1 class="display-3 fw-bold mb-3">Faisons grandir votre présence en ligne</h1>
+      <p class="lead mb-4 mx-auto" style="max-width: 640px;">
+        TechnoServices accompagne les PME marocaines dans leur transformation digitale :
+        sites web, applications et conseil.
+      </p>
+      <div class="d-flex gap-3 justify-content-center flex-wrap">
+        <a href="#services" class="btn btn-warning btn-lg px-4">Nos services</a>
+        <a href="pages/contact.html" class="btn btn-outline-light btn-lg px-4">Nous contacter</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- SERVICES -->
+  <section class="py-5" id="services">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos services</h2>
+        <p class="text-secondary">Des prestations adaptées à chaque étape de votre projet.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-3">
+            <div class="icon-circle mx-auto mb-3"><i class="bi bi-code-slash"></i></div>
+            <h5 class="fw-semibold">Développement web</h5>
+            <p class="text-secondary small mb-0">Sites vitrines et applications sur mesure, responsive et rapides.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-3">
+            <div class="icon-circle mx-auto mb-3"><i class="bi bi-phone"></i></div>
+            <h5 class="fw-semibold">Applications mobiles</h5>
+            <p class="text-secondary small mb-0">Applications Android et iOS performantes et intuitives.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-3">
+            <div class="icon-circle mx-auto mb-3"><i class="bi bi-graph-up-arrow"></i></div>
+            <h5 class="fw-semibold">Référencement SEO</h5>
+            <p class="text-secondary small mb-0">Améliorez votre visibilité sur les moteurs de recherche.</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3">
+          <div class="card service-card h-100 border-0 shadow-sm text-center p-3">
+            <div class="icon-circle mx-auto mb-3"><i class="bi bi-headset"></i></div>
+            <h5 class="fw-semibold">Support &amp; conseil</h5>
+            <p class="text-secondary small mb-0">Un accompagnement de proximité tout au long de votre projet.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- À PROPOS -->
+  <section class="py-5 bg-light" id="apropos">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=900&q=60"
+               class="img-fluid rounded-4 shadow" alt="Équipe au travail" loading="lazy">
+        </div>
+        <div class="col-lg-6">
+          <h2 class="fw-bold mb-3">À propos de nous</h2>
+          <p class="text-secondary">
+            Fondée en 2018, TechnoServices réunit une équipe passionnée de développeurs,
+            designers et chefs de projet. Notre mission : rendre le numérique accessible
+            aux petites et moyennes entreprises.
+          </p>
+          <div class="row text-center mt-4">
+            <div class="col-4">
+              <div class="counter fw-bold text-primary">120+</div>
+              <small class="text-secondary">Projets livrés</small>
+            </div>
+            <div class="col-4">
+              <div class="counter fw-bold text-primary">45</div>
+              <small class="text-secondary">Clients satisfaits</small>
+            </div>
+            <div class="col-4">
+              <div class="counter fw-bold text-primary">7</div>
+              <small class="text-secondary">Années d'expérience</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RÉALISATIONS -->
+  <section class="py-5" id="realisations">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="fw-bold">Nos réalisations</h2>
+        <p class="text-secondary">Quelques projets récents.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=600&q=60"
+                 class="card-img-top" alt="Projet e-commerce" loading="lazy">
+            <div class="card-body">
+              <span class="badge bg-primary-subtle text-primary mb-2">E-commerce</span>
+              <h6 class="card-title fw-semibold">Boutique en ligne « Atlas Store »</h6>
+              <p class="card-text small text-secondary">Plateforme de vente responsive avec paiement intégré.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=60"
+                 class="card-img-top" alt="Tableau de bord" loading="lazy">
+            <div class="card-body">
+              <span class="badge bg-success-subtle text-success mb-2">Dashboard</span>
+              <h6 class="card-title fw-semibold">Tableau de bord analytique</h6>
+              <p class="card-text small text-secondary">Visualisation de données en temps réel pour une PME.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card border-0 shadow-sm h-100">
+            <img src="https://images.unsplash.com/photo-1481487196290-c152efe083f5?auto=format&fit=crop&w=600&q=60"
+                 class="card-img-top" alt="Application mobile" loading="lazy">
+            <div class="card-body">
+              <span class="badge bg-warning-subtle text-warning-emphasis mb-2">Mobile</span>
+              <h6 class="card-title fw-semibold">Application de réservation</h6>
+              <p class="card-text small text-secondary">Application mobile de prise de rendez-vous.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-5 cta-band text-white text-center">
+    <div class="container">
+      <h2 class="fw-bold mb-3">Un projet en tête ?</h2>
+      <p class="mb-4">Parlons-en. Notre équipe vous répond sous 24 heures.</p>
+      <a href="pages/contact.html" class="btn btn-light btn-lg px-4">Demander un devis</a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white-50 pt-5 pb-4">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <h5 class="text-white"><i class="bi bi-hexagon-fill text-warning"></i> TechnoServices</h5>
+          <p class="small">Solutions numériques pour les PME marocaines.</p>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-white">Navigation</h6>
+          <ul class="list-unstyled small">
+            <li><a href="#services" class="link-secondary text-decoration-none">Services</a></li>
+            <li><a href="#apropos" class="link-secondary text-decoration-none">À propos</a></li>
+            <li><a href="pages/contact.html" class="link-secondary text-decoration-none">Contact</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h6 class="text-white">Suivez-nous</h6>
+          <div class="d-flex gap-3 fs-5">
+            <a href="#" class="link-light"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="link-light"><i class="bi bi-linkedin"></i></a>
+            <a href="#" class="link-light"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+      <hr class="border-secondary my-4">
+      <p class="text-center small mb-0">© 2022 TechnoServices · Réalisé par Badr Chigar (premier stage)</p>
+    </div>
+  </footer>
+
+  <button id="backToTop" class="btn btn-warning btn-back-top" aria-label="Haut de page">
+    <i class="bi bi-arrow-up"></i>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
